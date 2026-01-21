@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator with History</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h3>Simple Calculator</h3>
+
+      <!-- Display -->
+      <div id="display">0</div>
+
+      <!-- Number Buttons -->
+      <div class="numbers">
+        <button id="btn-7">7</button>
+        <button id="btn-8">8</button>
+        <button id="btn-9">9</button>
+
+        <button id="btn-4">4</button>
+        <button id="btn-5">5</button>
+        <button id="btn-6">6</button>
+
+        <button id="btn-1">1</button>
+        <button id="btn-2">2</button>
+        <button id="btn-3">3</button>
+
+        <button id="btn-0">0</button>
+        <button id="btn-decimal">.</button>
+        <button id="btn-equals">=</button>
+      </div>
+
+      <!-- Operators -->
+      <div class="operators">
+        <button id="btn-add">+</button>
+        <button id="btn-subtract">-</button>
+        <button id="btn-multiply">×</button>
+        <button id="btn-divide">÷</button>
+        <button id="btn-clear">AC</button>
+      </div>
+
+      <!-- History -->
+      <div class="history">
+        <strong>History</strong>
+        <div id="history-list"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
