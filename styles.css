@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.calculator {
+  background: #ffffff;
+  border: 2px solid #ccc;
+  padding: 15px;
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Display */
+#display {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: right;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Number buttons (Grid) */
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.numbers button {
+  background: #ddd;
+}
+
+/* Operators (Flexbox) */
+.operators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+#btn-add,
+#btn-subtract,
+#btn-multiply,
+#btn-divide {
+  background: #2196f3;
+  color: white;
+  flex: 1;
+}
+
+#btn-clear {
+  background: #f44336;
+  color: white;
+  flex: 1;
+}
+
+#btn-equals {
+  background: #4caf50;
+  color: white;
+}
+
+/* History */
+.history {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+#history-list {
+  max-height: 120px;
+  overflow-y: auto;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+button {
+  padding: 12px;
+  font-size: 1em;
+  cursor: pointer;
+}
